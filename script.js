@@ -163,17 +163,8 @@
 
 let array = [5, 10, 3, 27, 108, 777];
 
-function maxnumber() {
-    for (let x of array) {
 
-        return Math.max(...array);
-    }
-}
-let result = array
-console.log(result);
-
-
-// console.log(Math.max(...array));
+console.log(Math.max(...array));
 
 
 
