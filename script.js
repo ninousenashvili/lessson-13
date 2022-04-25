@@ -56,14 +56,14 @@
 //     studentstatus: 'active'
 // }
 
-// if (user.age < 18 && user.studentstatus === 'active') {
+// if (user.age < 18 && user.studentstatus == 'active') {
 //     console.log('hello');
 // }
 
-// else if (user.name === 'giorgi') {
+// else if (user.name == 'giorgi') {
 //     console.log('hello giorgi');
 // }
-// else if (user.studentstatus === 'active' || user.age < 25) {
+// else if (user.studentstatus == 'active' || user.age < 25) {
 //     console.log('hello world');
 // }
 // else {
@@ -74,7 +74,7 @@
 
 // let array = [32, 10, 'hello', null, 'hello2', 50];
 // for (let x of array) {
-//     if (x % 5 == 0) {
+//     if (x % 5 == 0 && typeof x == 'number') {
 //         console.log(x);
 //     }
 // }
@@ -107,7 +107,7 @@
 // }
 // sum(2, -9, 5, 11, -30, 100, -8, -11, -4, 5, -6, 8);
 
-// Task 1 - using return fun
+// Task 1 - using return function
 
 // function sum(...args) {
 //     numbersum = 0;
@@ -161,10 +161,20 @@
 
 // task 4
 
-let array = [5, 10, 3, 27, 108, 777];
+function Max(numbers) {
+    let maxvalue = 0;
+
+    for (let item of numbers) {
+        if (item > maxvalue) {
+            maxvalue = item;
+
+        }
+    }
+    return maxvalue;
+}
 
 
-console.log(Math.max(...array));
+console.log(Max([5, 10, 3, 27, 108, 777]));
 
 
 
